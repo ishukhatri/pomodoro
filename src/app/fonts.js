@@ -1,17 +1,22 @@
-import localFont from "next/font/local";
+import { Roboto_Slab, Kumbh_Sans, Space_Mono } from "next/font/google";
 
-export const Ubuntu = localFont({
-  src: [
-    { path: "./fonts/Ubuntu-Bold.ttf", style: "bold" },
-    {
-      path: "./fonts/Ubuntu-Medium.ttf",
-      style: "medium",
-    },
-    {
-      path: "./fonts/Ubuntu-Regular.ttf",
-      style: "normal",
-    },
-  ],
+export const roboto_slab = Roboto_Slab({
+  subsets: ["latin"],
   display: "swap",
-  variable: "--font-ubuntu",
+  variable: "--font-roboto-slab",
+  weight: ["400", "700"],
+});
+
+export const kumbh_sans = Kumbh_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-kumbh-sans",
+  weight: ["400", "700"],
+});
+
+export const space_mono = Space_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-space-mono",
+  weight: ["400", "700"],
 });

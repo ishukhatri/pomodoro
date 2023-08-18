@@ -1,10 +1,10 @@
-import CircleTemplate from "./CircleTemplate";
+import CircleTemplate from "./SettingRadioOptionWrapper";
 
 export default {
-  component: CircleTemplate,
+  component: SettingRadioOptionWrapper,
 };
 
-const Template = (args) => <CircleTemplate {...args} />;
+const Template = (args) => <SettingRadioOptionWrapper {...args} />;
 
 export const fontUnselected = Template.bind({});
 fontUnselected.args = {
